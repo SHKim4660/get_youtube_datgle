@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
 import selenium
 import time
+from konlpy.corpus import kolaw
+from konlpy.tag import Okt
+import matplotlib as plt
+import nltk
 from konlpy.tag import Okt
 from konlpy.tag import Kkma
 from selenium.webdriver.common.keys import Keys
@@ -31,8 +35,10 @@ print(a)
 kkma = Kkma()
 
 for i in range(len(a)):
-    kkma.pos(a[i])
+    print(kkma.pos(a[i]))
 
+# plt.figure(figsize=(12,7))
+# ko.plot()
 
 while True:
     pass
